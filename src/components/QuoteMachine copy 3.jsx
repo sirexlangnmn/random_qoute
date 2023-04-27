@@ -79,7 +79,7 @@ const QuoteMachine = () => {
   return (
     <div>
       <div className="flex justify-center items-center h-screen shadow-lg" id="quote-box">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full mx-6">
+        <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full">
           <div className="mb-4">
             <div className="text-lg flex items-center" style={{ color: color }}>
               <FaQuoteLeft className="w-6 mr-2" />
