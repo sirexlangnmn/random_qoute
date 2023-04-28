@@ -28,7 +28,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { FiTwitter } from "react-icons/fi";
-import { FaQuoteLeft, FaQuoteRight, FaTumblr } from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight, FaTumblr, FaGithub } from 'react-icons/fa';
 
 
 const QuoteMachine = () => {
@@ -76,6 +76,11 @@ const QuoteMachine = () => {
     window.open(tweetUrl, '_blank');
   };
 
+  const githubPage = () => {
+    const githubUrl = `https://github.com/sirexlangnmn/random_qoute`;
+    window.open(githubUrl, '_blank');
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center h-screen shadow-lg" id="quote-box">
@@ -101,6 +106,9 @@ const QuoteMachine = () => {
               </div>
               <div className="bg-blue-400 rounded-lg p-2 mt-2 shadow-lg" style={{ backgroundColor: color }} >
                 <FaTumblr id="tumblr-quote" className='h-5 w-5 font text-white' />
+              </div>
+              <div className="bg-blue-400 rounded-lg p-2 mt-2 shadow-lg" style={{ backgroundColor: color }} >
+                <FaGithub onClick={githubPage} id="tumblr-quote" className='h-5 w-5 font text-white' />
               </div>
 
             </div>
